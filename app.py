@@ -123,7 +123,7 @@ def main() -> None:
     for rank, (crop, p) in enumerate(top3, start=1):
         st.write(f"**{rank}. {crop}** — estimated likelihood: **{p:.0%}**")
 
-    st.subheader("Why this makes sense (plain English)")
+    st.subheader("Why this makes sense ?")
     pct = _percentile(df[feature], float(value))
     st.write(
         f"Your **{feature} = {value:.2f}** is around the **{pct:.0f}th percentile** compared to the dataset."
